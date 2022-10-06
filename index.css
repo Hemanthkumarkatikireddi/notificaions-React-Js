@@ -1,0 +1,103 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .content-container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .content-container {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-container {
+    width: 30%;
+  }
+}
+.heading {
+  font-size: 32px;
+  font-family: Roboto;
+  margin: 15px;
+}
+.logo {
+  height: 15px;
+  margin-top: 10px;
+}
+.logo-name {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 10px;
+}
+.notify {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .notify {
+    width: 80%;
+  }
+  .logo-name {
+    font-size: 15px;
+  }
+  .logo {
+    height: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .notify {
+    width: 90%;
+  }
+  .logo-name {
+    font-size: 18px;
+  }
+  .logo {
+    height: 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .notify {
+    width: 100%;
+  }
+  .logo-name {
+    font-size: 18px;
+  }
+  .logo {
+    height: 25px;
+  }
+}
+.primary {
+  background-color: #0b69ff;
+}
+.success {
+  background-color: #2dca73;
+}
+.warning {
+  background-color: #ffb800;
+}
+.error {
+  background-color: #ff0b37;
+}
